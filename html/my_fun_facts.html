@@ -4,90 +4,114 @@
     <title>Halee Tisler Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+    <link rel="icon" type="image/playing" href="../assets/img/favicon.png" />
+    <link rel="stylesheet" href="../css/fun_facts_styles.css" />
   </head>
   <body>
     <header>
-      <h3 class="logo">LOGO</h3>
       <nav class="navbar">
+        <h2 class="logo">Halee Tisler</h2>
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="./my_resume.html">Resume</a></li>
-          <li><a href="./my_fun_facts.html">Fun Facts</a></li>
+          <li><a href="my_resume.html">Resume</a></li>
+          <li><a href="my_fun_facts.html">Fun Facts</a></li>
         </ul>
+        <button class="hire-btn">Hire Me!</button>
       </nav>
-      <button class="hire-btn">Hire Me!</button>
     </header>
-    <h1>Some fun facts about me</h1>
-    <article class="fav-book">
-      <h3 class="fav-book">Favorite Book</h3>
-      <p class="fav-title">Title: Six of Crows, by Leigh Bargudo</p>
-      <p class="link">
-        Purchase this book
-        <a
-          target="_blank"
-          href="https://www.amazon.com/Six-Crows-1/dp/1432896938/ref=asc_df_1432896938/?tag=hyprod-20&linkCode=df0&hvadid=658703646843&hvpos=&hvnetw=g&hvrand=5587195761549689763&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9016977&hvtargid=pla-1690519625728&psc=1&mcid=7efc332c163033c2ab6cb6cb9ba6af87"
-        >
-          here!
-        </a>
-      </p>
-      <p class="description">
-        If you enjoy adventurous books about a heist with just a sprinkle of
-        romance, then this is the book for you! This book makes you fall in love
-        with all of the characters as you get a glimpse into each of their
-        points of view. I never wanted to put it down!
-      </p>
-      <img
-        class="fav-img"
-        src="../assets/img/SixOfCrows.jpg"
-        alt="Six of Crows by Leigh Bardugo Cover"
-        height="200px"
-      />
-    </article>
-    <article class="fav-audio">
-      <h3 class="fav-audio">Favorite Song</h3>
-      <p class="fav-title">
-        Title: "hate to be lame", Lizzy McAlpine and FINNEAS
-      </p>
-      <p class="link">
-        Listen
-        <a
-          target="_blank"
-          href="https://open.spotify.com/album/68L5xVV9wydotfDXEik7eD"
-        >
-          now!
-        </a>
-      </p>
-      <audio controls src="../assets/audio/hateToBeLame.mp3">
-        hate to be lame sample
-      </audio>
-    </article>
-    <article class="fav-tv">
-      <h3 class="fav-tv">Favorite TV Show</h3>
-      <p class="fav-title">Title: How I Met Your Mother</p>
-      <iframe
-        src="https://www.youtube.com/watch?v=XgUmyAGwxgw"
-        title="How I Met Your Mother trailer"
-      ></iframe>
-    </article>
-    <!-- https://youtu.be/cjJLEYMzpjc?si=0AQBi0tKYGflApiX -->
-    <hr />
+    <main>
+      <h1>Fun Facts About Me</h1>
+      <article class="fav-book-section">
+        <div class="fav-book-info">
+          <h3 class="fav-book">Favorite Book</h3>
+          <p class="fav-title">Six of Crows, by Leigh Bargudo</p>
+          <p class="description">
+            If you enjoy adventurous books about a heist with just a sprinkle of
+            romance, then this is the book for you! This book makes you fall in
+            love with all of the characters as you get a glimpse into each of
+            their points of view. I never wanted to put it down!
+          </p>
+          <a
+            class="purchase"
+            target="_blank"
+            href="https://www.amazon.com/Six-Crows-1/dp/1432896938/ref=asc_df_1432896938/?tag=hyprod-20&linkCode=df0&hvadid=658703646843&hvpos=&hvnetw=g&hvrand=5587195761549689763&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9016977&hvtargid=pla-1690519625728&psc=1&mcid=7efc332c163033c2ab6cb6cb9ba6af87"
+          >
+            <button>Purchase Now!</button>
+          </a>
+        </div>
+        <img
+          class="fav-img"
+          src="../assets/img/SixOfCrows.jpg"
+          alt="Six of Crows by Leigh Bardugo Cover"
+          height="200px"
+        />
+      </article>
+      <div class="favorite-second-row">
+        <article class="fav-tv-section">
+          <div class="tv-info">
+            <h3 class="fav-tv">Favorite TV Show</h3>
+            <p class="fav-title">How I Met Your Mother</p>
+          </div>
+          <iframe src="https://www.youtube.com/embed/cjJLEYMzpjc?si=q-hi1plLgdTs8j77" title="YouTube How I Met Your Mother Trailer" ></iframe>
+        </article>
+        <!-- https://youtu.be/cjJLEYMzpjc?si=0AQBi0tKYGflApiX -->
+        <article class="fav-audio-section">
+          <div class="fav-song-info">
+            <h3 class="fav-audio">Favorite Song</h3>
+            <p class="fav-title">
+              "hate to be lame", Lizzy McAlpine and FINNEAS
+            </p>
+            <audio controls src="../assets/audio/hateToBeLame.mp3">
+              hate to be lame sample
+            </audio>
+            <br>
+              <a
+              class="listen"
+                target="_blank"
+                href="https://open.spotify.com/album/68L5xVV9wydotfDXEik7eD"
+              >
+                <button>Listen Now!</button>
+              </a>
+            </p>
+          </div>
+        </article>
+        <article class="fav-icecream-section">
+          <h3 class="fav-icecream">Favorite Ice Cream</h3>
+          <p class="fav-title">
+            Just kidding ... I'm actually lactose intolerant!
+          </p>
+          <img src="../assets/img/icecream.jpg" />
+        </article>
+      </div>
+    </main>
     <footer>
-      <section class="copyright">
-        <p>© 2024 Halee Tisler</p>
-      </section>
-      <section class="email">
-        <p>Let's Connect: htisler@oakland.edu</p>
-      </section>
-      <section class="socials">
-        <ul>
-          <li>GitHub: <a href="https://github.com/halee-t">halee-t</a></li>
-          <li>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/halee-tisler/">halee-tisler</a>
-          </li>
-        </ul>
-      </section>
+      <div class="cols">
+        <section class="copyright">
+          <h1>Halee Tisler</h1>
+          <p>© 2024 Halee Tisler</p>
+        </section>
+        <section class="links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="../index.html">Home </a></li>
+            <li><a href="my_resume.html">Resume </a></li>
+            <li><a href="my_fun_facts.html">Fun Facts </a></li>
+          </ul>
+        </section>
+        <section class="socials">
+          <h4>Socials</h4>
+          <ul>
+            <li><a href="https://github.com/halee-t">GitHub</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/halee-tisler/">LinkedIn</a>
+            </li>
+          </ul>
+        </section>
+        <section class="email">
+          <h4>Let's Connect:</h4>
+          <p><a href="mailto:htisler@oakland.edu">htisler@oakland.edu</a></p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

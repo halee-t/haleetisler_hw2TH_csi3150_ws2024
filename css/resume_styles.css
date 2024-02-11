@@ -12,6 +12,7 @@
   --text-secondary: #040014;
   --accent: #ee6958;
 }
+
 body {
   height: 100vh;
   background: var(--bg-primary);
@@ -69,119 +70,89 @@ body {
 
 .hire-btn:hover {
   background: var(--bg-secondary);
-  color: var(--text-secondary);
+  color: var(--bg-primary);
 }
 
-/* HERO SECTION */
-
-.main {
-  height: 640px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+/* MAIN */
+main {
+  padding: 60px 100px 50px;
   color: var(--text-primary);
+  position: relative;
+}
+
+main h1 {
+  color: var(--text-primary);
+  font-size: 32px;
+  font-weight: 600;
+  padding-bottom: 25px;
+  text-align: center;
   margin-bottom: 50px;
 }
 
-.main h1 {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.main blockquote {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.main span {
-  color: var(--bg-secondary);
-}
-
-.main .hero-img {
-  margin-top: 20px;
-}
-.main .hero-img img {
-  object-fit: cover;
-  width: 300px;
-  height: 300px;
-  border-radius: 10%;
-  margin-bottom: 30px;
-}
-
-.main .hi-btn button {
-  background: var(--accent);
-  padding: 10px 15px;
-  border: none;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-  color: var(--text-primary);
-  text-decoration: none;
-  transition: color 0.3s ease;
-  width: 150px;
-}
-
-.main .hi-btn button:hover {
-  background-color: var(--bg-secondary);
-  cursor: pointer;
-  color: var(--text-secondary);
-}
-
-/* ABOUT ME */
-.about {
-  margin: 0px 60px 150px 60px;
-  display: flex;
-  align-items: center;
-  gap: 100px;
-}
-
-.about-title {
+main h3 {
   color: var(--bg-secondary);
   font-size: 24px;
-  font-weight: 600px;
-  margin: 0 0 20px 65px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.left-col-about img {
-  width: 300px;
-  border-radius: 10%;
+.resume-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
-.middle-col-about p {
-  color: var(--text-primary);
-  padding-bottom: 10px;
+.resume-info .contact {
+  position: absolute;
+  right: 100px;
 }
 
-.middle-col-about p a {
-  text-decoration: none;
-  color: var(--bg-secondary);
-  transition: color 0.3s ease;
-}
-
-.middle-col-about p a:hover {
+.resume-info .contact i {
   color: var(--accent);
 }
 
-.right-col-about {
-  width: 700px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.experience {
+  margin-bottom: 25px;
 }
 
-.progress {
-  background-color: var(--bg-secondary);
-  padding: 20px;
-  border-radius: 20px;
-  color: var(--text-secondary);
+.experience h5 {
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 600;
 }
 
-progress {
-  accent-color: var(--accent);
+.experience ul {
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+
+.experience ul li {
+  color: var(--text-primary);
+  font-size: 16;
+}
+
+.experience ul li::marker {
+  color: var(--accent);
+}
+
+.education {
+  margin-bottom: 25px;
+}
+
+.education th,
+.education td {
+  text-align: left;
+}
+
+.education .table-headings th:last-of-type {
+  padding: 0px 10px;
+}
+.education td:last-of-type {
+  padding: 0px 10px;
+}
+
+.hobbies {
+  margin-bottom: 25px;
 }
 
 /* FOOTER */
