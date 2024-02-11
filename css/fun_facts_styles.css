@@ -86,10 +86,15 @@ main h1 {
   margin: 50px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+}
+
 .fav-book-section {
   display: flex;
   align-items: center;
-  margin: 0px 145px 50px;
   color: var(--text-primary);
   gap: 50px;
 }
@@ -127,18 +132,18 @@ main h1 {
   object-fit: cover;
 }
 
-.favorite-second-row {
+.row-2 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   color: var(--text-primary);
   margin: 100px 0px;
 }
 
-.favorite-second-row h3 {
+.row-2 h3 {
   color: var(--bg-secondary);
 }
 
-.favorite-second-row .fav-title {
+.row-2 .fav-title {
   font-weight: 600;
   font-style: italic;
 }

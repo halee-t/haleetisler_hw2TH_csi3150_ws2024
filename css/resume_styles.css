@@ -96,15 +96,21 @@ main h3 {
   margin-bottom: 10px;
 }
 
-.resume-info {
+.container {
   display: flex;
-  align-items: center;
-  margin-bottom: 25px;
+  flex-direction: column;
 }
 
-.resume-info .contact {
-  position: absolute;
-  right: 100px;
+.resume-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 50px;
+}
+
+.resume-info .col-2 {
+  width: 250px;
 }
 
 .resume-info .contact i {

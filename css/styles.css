@@ -178,6 +178,7 @@ body {
   padding: 20px;
   border-radius: 20px;
   color: var(--text-secondary);
+  width: 210px;
 }
 
 progress {
